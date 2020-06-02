@@ -11,26 +11,16 @@ export function Navbar() {
         <div className="flex h-16">
           <div className="flex">
             <div className="flex items-center mr-6">
-              <SvgLogo className="h-12" />
+              <Link to="/" className="flex hover:z-50 focus:z-50">
+                <div className="flex items-center">
+                  <SvgLogo className="h-12" />
+                </div>
+              </Link>
             </div>
-            <a
-              href="#"
-              className="inline-flex items-center px-1 pt-1 border-b-2 border-indigo-500 text-sm font-medium leading-5 text-gray-900 focus:outline-none focus:border-indigo-700 transition duration-150 ease-in-out"
-            >
-              Archive
-            </a>
-            <a
-              href="#"
-              className="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out"
-            >
-              Donate
-            </a>
-            <a
-              href="#"
-              className="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out"
-            >
-              About
-            </a>
+
+            <PartialNavLink to={"/archive"}>Archive</PartialNavLink>
+            <PartialNavLink to={"/donate"}>Donate</PartialNavLink>
+            <PartialNavLink to={"/about"}>About</PartialNavLink>
           </div>
         </div>
       </div>
@@ -42,9 +32,11 @@ export function Navbar() {
 // are current
 function isPartiallyActive({ isPartiallyCurrent }) {
   return isPartiallyCurrent
-    ? { classNameName: `text-brand-2 px-2 z-1 text-xl md:text-2xl mr-2` }
+    ? {
+        className: `ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-indigo-500 text-sm font-medium leading-5 text-gray-900 focus:outline-none focus:border-indigo-700 transition duration-150 ease-in-out"`,
+      }
     : {
-        classNameName: `mr-2 text-default-soft px-2 text-default-soft hover:z-50 hover:text-brand-2 focus:z-50 focus:text-brand-2 text-xl md:text-2xl`,
+        className: `ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out`,
       };
 }
 
