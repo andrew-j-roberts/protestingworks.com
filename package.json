@@ -1,0 +1,48 @@
+{
+  "name": "protestingworks.com",
+  "description": "preserving and indexing protests",
+  "version": "0.0.1",
+  "author": "Andrew Roberts",
+  "license": "MIT",
+  "keywords": [
+    "gatsby",
+    "blacklivesmatter",
+    "blm",
+    "georgefloyd"
+  ],
+  "main": "n/a",
+  "scripts": {
+    "clean": "gatsby clean",
+    "start": "npm run develop",
+    "build": "npm run clean && gatsby build",
+    "develop": "npm run clean && gatsby develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "babel-preset-gatsby": "^0.4.1",
+    "prettier": "^1.15.3"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^1.5.8",
+    "@mdx-js/react": "^1.5.8",
+    "@tailwindcss/ui": "^0.3.0",
+    "@xstate/react": "^0.8.1",
+    "gatsby": "^2.18.23",
+    "gatsby-plugin-mdx": "^1.1.3",
+    "gatsby-plugin-netlify": "^2.0.6",
+    "gatsby-plugin-postcss": "^2.1.22",
+    "gatsby-plugin-purgecss": "^4.0.0",
+    "gatsby-plugin-react-helmet": "^3.0.4",
+    "gatsby-source-filesystem": "^2.0.26",
+    "immer": "^6.0.5",
+    "match-sorter": "^4.1.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.0",
+    "react-select": "^3.0.8",
+    "tailwindcss": "^1.4.6",
+    "use-immer": "^0.4.0",
+    "xstate": "^4.9.1"
+  }
+}
