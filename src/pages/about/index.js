@@ -22,8 +22,13 @@ export default function AboutPage() {
               King Jr.
             </p>
             <p className="mt-6">
-              The purpose of this site is to remember the George Floyd and anti
-              police brutality protests.
+              The purpose of this site is to preserve and index the George Floyd
+              and anti police brutality protests.
+            </p>
+            <p className="mt-6">
+              To prevent any conflicts of interest with on-going protest
+              activity, protests will not be posted to this site until at least
+              one full day after they occur.
             </p>
             <p className="mt-6">We will not be silenced. We are done dying.</p>
           </div>

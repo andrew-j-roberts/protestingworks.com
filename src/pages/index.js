@@ -3,25 +3,23 @@
  */
 
 import React from "react";
-import { useStaticQuery, graphql, Link } from "gatsby";
-import { searchAndSort } from "../components/search-and-sort";
 import { Layout } from "../components/Layout";
-import { Map } from "../components/Map";
+import { ProtestMap } from "../components/ProtestMap";
 
 export default function IndexPage() {
   return (
     <Layout>
       <header>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 class="text-3xl font-bold leading-tight text-gray-900">
-            Map view of archive
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <h1 className="text-3xl font-bold leading-tight text-gray-900">
+            Map view of protest archive
           </h1>
         </div>
       </header>
       <main>
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-          <div class="px-4 py-8 sm:px-0">
-            <Map />
+        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="px-4 py-8 sm:px-0">
+            <ProtestMap />
           </div>
         </div>
       </main>

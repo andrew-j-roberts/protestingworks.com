@@ -47,9 +47,9 @@ export function Layout({ children }) {
           content={`${withPrefix("/")}img/og-image.jpg`}
         /> */}
       </Helmet>
-      <div class="min-h-screen bg-gray-100">
+      <div className="min-h-screen bg-gray-100">
         <Navbar />
-        <div class="py-10">{children}</div>
+        <div className="py-10">{children}</div>
       </div>
     </React.Fragment>
   );

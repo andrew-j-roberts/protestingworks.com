@@ -6,7 +6,7 @@ import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import { searchAndSort } from "../../components/search-and-sort";
 import { Layout } from "../../components/Layout";
-import { Map } from "../../components/Map";
+import { Map } from "../../components/ProtestMap";
 
 export default function DonatePage() {
   return (
