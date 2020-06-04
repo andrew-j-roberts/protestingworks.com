@@ -13,7 +13,12 @@ export function ProtestMap() {
 
   if (typeof window !== undefined) {
     return (
-      <Map center={CENTER_OF_UNITED_STATES} zoom={4}>
+      <Map
+        className="w-full"
+        style={{ height: "600px" }}
+        center={CENTER_OF_UNITED_STATES}
+        zoom={4}
+      >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
