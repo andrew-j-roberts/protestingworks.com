@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { useLocation } from "@reach/router";
 import { useStaticQuery, graphql } from "gatsby";
-import FavIcon from "./favicon.png";
+import favicon from "../../favicon.ico";
 
 const SEO = ({ title, description, image, article }) => {
   const { pathname } = useLocation();
@@ -20,12 +20,18 @@ const SEO = ({ title, description, image, article }) => {
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    image: `${siteUrl}${FavIcon}`,
+    image: `${siteUrl}${favicon}`,
     url: `${siteUrl}${pathname}`,
   };
 
   return (
-    <Helmet title={seo.title} titleTemplate={titleTemplate}>
+    <Helmet
+      title={seo.title}
+      titleTemplate={titleTemplate}
+      link={[
+        { rel: "shortcut icon", type: "image/x-icon", href: `${favicon}` },
+      ]}
+    >
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
 
