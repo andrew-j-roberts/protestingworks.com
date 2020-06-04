@@ -30,7 +30,9 @@ export default function AboutPage() {
               activity, protests will not be posted to this site until at least
               one full day after they occur.
             </p>
-            <p className="mt-6">We will not be silenced. We are done dying.</p>
+            <p className="mt-6">
+              We will not be silenced, and we will not forget.
+            </p>
           </div>
         </div>
       </main>
