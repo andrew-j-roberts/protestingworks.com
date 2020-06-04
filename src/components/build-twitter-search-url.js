@@ -8,11 +8,9 @@ export function buildTwitterSearchUrl({ date, city, location }) {
   const baseUrl = `https://twitter.com/search?lang=en&q=`;
   let oneDayAfterDate = new Date(date).addDays(1);
   // append all the necessary query components to base url
-  return `${baseUrl}
-  ${formQueryComponent_AllOfTheseWords({
+  return `${baseUrl}${formQueryComponent_AllOfTheseWords({
     location,
-  })}%20
-  ${formQueryComponent_AnyOfTheseWords({
+  })}%20${formQueryComponent_AnyOfTheseWords({
     city,
     location,
   })}%20${formQueryComponent_SinceDate({
