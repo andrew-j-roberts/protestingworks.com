@@ -39,6 +39,7 @@ export function ProtestMap() {
                   <a
                     href={buildTwitterSearchUrl({
                       location: archiveItem.frontmatter.location,
+                      city: archiveItem.frontmatter.city,
                       date: archiveItem.frontmatter.date,
                     })}
                     className="mr-2"
