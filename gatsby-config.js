@@ -1,7 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `protestingworks.com`,
+    titleTemplate: "%s · protestingworks.com",
     description: `Preserving and indexing protests`,
+    url: "https://www.protestingworks.com", // No trailing slash allowed!
+    image: "/favicon.png", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@andrew_bytes",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

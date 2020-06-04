@@ -3,12 +3,14 @@
  */
 
 import React from "react";
+import SEO from "../components/SEO";
 import { Layout } from "../components/Layout";
 import { ProtestMap } from "../components/ProtestMap";
 
 export default function IndexPage() {
   return (
     <Layout>
+      <SEO title="Map" />
       <header>
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <h1 className="text-3xl font-bold leading-tight text-gray-900">

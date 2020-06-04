@@ -3,14 +3,13 @@
  */
 
 import React from "react";
-import { useStaticQuery, graphql, Link } from "gatsby";
-import { searchAndSort } from "../../components/search-and-sort";
+import SEO from "../../components/SEO";
 import { Layout } from "../../components/Layout";
-import { Map } from "../../components/ProtestMap";
 
 export default function DonatePage() {
   return (
     <Layout>
+      <SEO title="Donate" />
       <header>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 class="text-3xl font-bold leading-tight text-gray-900">Donate</h1>
