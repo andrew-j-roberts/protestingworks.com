@@ -47,7 +47,7 @@ export function Layout({ children }) {
           content={`${withPrefix("/")}img/og-image.jpg`}
         /> */}
       </Helmet>
-      <div className="min-h-screen bg-gray-100">
+      <div className="max-w-full min-h-screen bg-gray-100">
         <Navbar />
         <div className="py-10">{children}</div>
       </div>

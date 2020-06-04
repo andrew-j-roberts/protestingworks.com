@@ -18,8 +18,8 @@ export function Navbar() {
               </Link>
             </div>
             <PartialNavLink to={"/archive"}>Archive</PartialNavLink>
-            <PartialNavLink to={"/donate"}>Donate</PartialNavLink>
             <PartialNavLink to={"/about"}>About</PartialNavLink>
+            <PartialNavLink to={"/donate"}>Donate</PartialNavLink>
           </div>
         </div>
       </div>

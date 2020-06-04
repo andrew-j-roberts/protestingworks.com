@@ -9,11 +9,14 @@ export function useArchive() {
         allMdx {
           nodes {
             frontmatter {
-              attendance
+              slug
               date
+              state
+              city
+              location
               lat
               long
-              title
+              attendance
             }
           }
         }
