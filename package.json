@@ -36,7 +36,7 @@
     "gatsby-plugin-react-helmet": "^3.0.4",
     "gatsby-plugin-react-leaflet": "^2.0.13",
     "gatsby-source-filesystem": "^2.0.26",
-    "immer": "^6.0.5",
+    "immer": "^8.0.1",
     "leaflet": "^1.6.0",
     "match-sorter": "^4.1.0",
     "react": "^16.12.0",
